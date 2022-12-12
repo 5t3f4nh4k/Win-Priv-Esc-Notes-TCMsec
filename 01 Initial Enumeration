@@ -30,4 +30,16 @@ netstat -ano                  // show info about opened ports, listening service
 ==================================================
 Password Hunting:=================================
 ==================================================
+findstr /si password *.txt    // search string "password" in txt files in current dir
+==================================================
+AV Enumeration:=--================================
+==================================================
+check AV:
+sc query <windefend>          //service query to check if bit defender is running
+sc queryex type=service       // show all services running on the machine
+check FW:
+netsh advfirewall dump        //new command
+netsh firewall show state     //older command, if the previous shows nothing
+netsh firewall show config    //show FW configuration //search for open ports and special configurations
+
 
