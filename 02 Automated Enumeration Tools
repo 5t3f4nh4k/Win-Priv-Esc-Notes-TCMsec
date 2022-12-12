@@ -1,0 +1,15 @@
+==================================================
+Automated Tools ==================================
+==================================================
+Executables:      //all doing the same thing, some of them must be compiled and then run
+- winPEAS.exe      //require .Net 4 ;/ otherwise don't work
+- Seatbelt.exe (compile)
+- Watson.exe (compile)    // more updated than sherlock
+- SharpUp.exe (compile)
+PowerShell:
+- Sherlock.ps1      //predecessor of Watson   //looking for common vulnerabilities, mayB not so complete as winPEAS // now depricated
+- PowerUp.ps1       //SharpUp but written in powershell not C#
+- jaw-enum.ps1
+Other:              //may work if previous two (executables and powershell) don't work
+- windows-exploit-suggester.py (local)    //running localy on yo attack machine
+- Exploit Suggester (Metasploit)
