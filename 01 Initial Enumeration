@@ -3,9 +3,7 @@ system enum:======================================
 ==================================================
 systeminfo                  //show system info
 systeminfo | findstr /B /C: "OS Name" /C:"OS Version" /C:"System Type"     // grep for sertain strings
-
 hostname                    //show hostname
-
 wmic qfe    //wmic (windows management instrumentation comandline) - return info about the system, qfe (quick fix engineering) - what has been available, what patch, when was the last patching info
 wmic qfe get Caption,Description,HotFixID,InstalledOn   // grep certain columns
 wmic logicaldisk
@@ -17,7 +15,6 @@ user enum:========================================
 whoami                      // info about ourself
 whoami /priv
 whoami /groups
-
 net user                     // show all users
 net user <username>          // show info 4 sertain user
 net localgroup               // sometime wors
@@ -27,11 +24,10 @@ network enum:=====================================
 ==================================================
 ipconfig                      // net info
 ipconfig /all                 // we could see the domain controller as DNS server
-
 arp -a                        // show arp tables
-
 route print                   // show routing tables
-
 netstat -ano                  // show info about opened ports, listening services, etc
-
+==================================================
+Password Hunting:=================================
+==================================================
 
